@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contrafake - Verifica la verdad en un clic</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -29,9 +30,16 @@
     }
 
     .logo {
+      display: flex;
+      align-items: center;
       font-size: 1.5rem;
       font-weight: 700;
       color: #2b7cff;
+    }
+
+    .logo img {
+      width: 40px;
+      margin-right: 10px;
     }
 
     nav a {
@@ -70,6 +78,24 @@
       border-radius: 8px;
       font-size: 1rem;
       cursor: pointer;
+    }
+
+    .carousel {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .carousel-container {
+      width: 100%;
+      height: 300px;
+      background: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      color: #777;
+      font-size: 1.2rem;
     }
 
     .section {
@@ -113,7 +139,10 @@
 </head>
 <body>
   <header>
-    <div class="logo">Contrafake</div>
+    <div class="logo">
+      <img src="logo.png" alt="Logo Contrafake">
+      Contrafake
+    </div>
     <nav>
       <a href="#">Inicio</a>
       <a href="#">Herramientas</a>
@@ -127,6 +156,12 @@
     <p>Contrafake es tu escudo digital contra la desinformación en redes sociales y medios.</p>
     <button>Probar ahora</button>
   </section>
+
+  <div class="carousel">
+    <div class="carousel-container">
+      Aquí aparecerán imágenes destacadas próximamente.
+    </div>
+  </div>
 
   <section class="section">
     <h2>¿Qué ofrece Contrafake?</h2>
